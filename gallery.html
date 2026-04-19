@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Vivan Transport</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --blue: #002e5d; --orange: #ff6600; --white: #ffffff; }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
+        
+        nav { background: var(--blue); padding: 15px; text-align: center; }
+        nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; }
+
+        .gallery-container { max-width: 1000px; margin: 40px auto; padding: 20px; text-align: center; }
+        h2 { color: var(--blue); margin-bottom: 30px; }
+
+        /* Grid Layout */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .grid-item { background: white; padding: 10px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        .grid-item img { width: 100%; height: 200px; object-fit: cover; border-radius: 5px; cursor: pointer; transition: 0.3s; }
+        .grid-item img:hover { transform: scale(1.05); }
+        .grid-item p { margin-top: 10px; font-weight: bold; color: #555; }
+
+        footer { background: #222; color: white; text-align: center; padding: 20px; margin-top: 50px; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact Us</a>
+</nav>
+
+<div class="gallery-container">
+    <h2>Hamari Jhalak (Work Gallery)</h2>
+    
+    <div class="grid">
+        <div class="grid-item">
+            <img src="shop.jpg" alt="Vivan Transport Shop">
+            <p>Hamari Shop</p>
+        </div>
+        <div class="grid-item">
+            <img src="packing.jpg" alt="Safe Packing">
+            <p>Safe Packing Process</p>
+        </div>
+        <div class="grid-item">
+            <img src="delivery.jpg" alt="Fast Delivery">
+            <p>On-time Delivery</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>Vivan Transport &copy; 2026 | Delhivery Partner</p>
+</footer>
+
+</body>
+</html>
